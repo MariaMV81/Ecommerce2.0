@@ -1,28 +1,26 @@
-:root {
-    --hue: 203;
-    --primario: hsla(var(--hue), 70%, 50%, 1);
-    --secundario: hsla(var(--hue), 70%, 70%, 1);
-    --resalto: hsla(var(--hue), 85%, 55%, 1);
-    --blanco: hsla(var(--hue), 10%, 95%, 1);
-    --negro: hsla(var(--hue), 10%, 5%, 1);
-    --gris: hsla(var(--hue), 10%, 5%, 0.15);
-    --error: tomato;
-}
+ :root {
+     /*colores*/
+     --primario:rgb(236, 156, 36);
+     --primario-claro:#dd0638 ;
+     --primario-oscuro: rgb(5, 96, 161);
+     --negro: black;
+     --blanco: white;
+     --gris: #cacaca;
+     /*tamaño de texto*/
+     --texto-base: 16px;
+     --h1: 3.052rem;
+     --h2: 2.441rem;
+     /*espacios*/
+     --s: 8px;
+     --m: 16px;
+     --l: 24px;
+ }
 
-/*Globales*/
-*::after,
-*::before,
-*{/*selector universal, para reiniciar los estilos globales*/
+
+
+body {
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body{
-    margin: 0 auto;
-    max-width: 1200px;
-    font-family: 'lato';
-    color:rgb(14, 70, 119)
+    
 }
 
 .icon-cart{
@@ -31,14 +29,19 @@ body{
 }
 
 img{
-    max-width: 100%;/*ancho maximo del 100% no se puede salir ni desbordar*/
+    margin-right: 20px;
+    
 }
 
 /*Header*/
-header{
+header {
     display: flex;
     justify-content: space-between;
-    padding: 30px 0 40px 0 ;
+    align-items: center;
+    /* Añadir esta línea */
+    padding: 30px 20px 40px 20px;
+    margin: 0;
+    /* Eliminar cualquier margen */
 }
 
 /*Main*/
@@ -116,8 +119,8 @@ a,
 
 .wrap {
     max-width: 1080px;
-    padding: 0 16px;
-    margin: 0 auto;
+    padding: 0;
+    margin: auto;
 }
 
 .caja {
@@ -144,10 +147,12 @@ header {
 
 header .wrap {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 24px;
+    align-items:center;
+    justify-content:center ;
+    gap: 96px;
 }
+
+
 
 .logo {
     margin: 0;
@@ -159,6 +164,8 @@ header #buscador {
 }
 
 .navegacion {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size:x-large;
     border-bottom: 1px solid var(--gris);
 }
 
@@ -181,13 +188,15 @@ header #buscador {
 }
 
 .jumbotron {
-    background-image: url("../img/horizontal.jpg");
+    background-image: url("../img/pintura-arcoiris.jpg");
     background-size: cover;
     background-position: center center;
 
     padding: 112px 0;
 
     color: var(--blanco);
+
+    text-align: center;
 }
 
 .titulo-cat {
@@ -197,14 +206,16 @@ header #buscador {
     align-items: center;
     margin-top: 56px;
     margin-bottom: 32px;
+   
 }
 
 .titulo-cat h4 {
     margin: 0;
 }
 
+
 .valoraciones {
-    background: var(--gris);
+    background: var(--primario);
     padding: 72px 0;
     margin-top: 80px;
 }
@@ -245,7 +256,7 @@ header #buscador {
 }
 
 footer {
-    background: var(--negro);
+    background: var(--primario-oscuro);
     color: var(--blanco);
     padding: 80px 0;
 }

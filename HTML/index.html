@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Mi tienda</title>
+    <meta charset="utf-8">
+    <title>Lienzo en Blanco</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -26,7 +27,10 @@
 
     <header>
       <div class="wrap">
-        <h4 class="logo">Lienzo en Blanco</h4>
+        <div class="logo">
+          <img src="../img/Lienzo-removebg-preview.png" alt="logo Lienzo en Blanco" width="250"/>
+        </div>
+        
 
         <div class="input-grp" id="buscador">
           <input type="buscador" placeholder="Buscar producto" />
@@ -56,16 +60,16 @@
       <div class="wrap">
         <nav>
           <ul>
-            <li><a href="#"></a>Inicio</li>
-            <li><a href="#"></a>Sobre mí</li>
-            <li><a href="#"></a>Ofertas</li>
-            <li><a href="#"></a>Marcos</li>
+            <li><a href="#" title="Inicio"></a>Inicio</li>
+            <li><a href="#" title="Sobre mi"></a>Sobre mí</li>
+            <li><a href="#" title="Ofertas"></a>Ofertas</li>
+            <li><a href="#" title="Marcos"></a>Marcos</li>
           </ul>
         </nav>
         <nav>
           <ul>
-            <li><a href="#"></a>Login</li>
-            <li><a href="#"></a>Contactos</li>
+            <li><a href="#" title="login"></a>Login</li>
+            <li><a href="#" title="contacto"></a>Contactos</li>
           </ul>
         </nav>
       </div>
@@ -236,20 +240,21 @@
             <div class="wrap">
               <div class="info">
                 <h4>Testimonios de clientes</h4>
-                <p>COnsigue ahora o muere jajaj</p>
+                
                 <a href="#" class="btn">Ver todos</a>
               </div>
               <div class="caja destacada">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates vitae, inventore repellendus suscipit nihil ex sequi laborum delectus id nulla totam, magnam explicabo ipsa. Nihil optio dolorem ea eum culpa.</p>
-                <p>Rafa Campos</p>
+                <p>María Martos</p>
                 <div class="valoracion">
                   <span class="m-color">
                       <i class="bi bi-star-fill"></i>
                       <i class="bi bi-star-fill"></i>
                       <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star"></i>
+                      <i class="bi bi-star"></i>
                   </span>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
+                  
               </div>  
               </div>
             </div>
@@ -261,28 +266,21 @@
             <div class="garantia">
               <i class="bi bi-bag-heart h2 m-color"></i>
               <div>
-                <h5>Garantia 1</h5>
-                <p>Toda la garantia del mundo</p>
+                <h5>Pago Seguro</h5>
+                <p>Fracciona tu pago al momento,<br> sin papeleo</p>
               </div>
             </div>
             <div class="garantia">
               <i class="bi bi-bag-heart h2 m-color"></i>
               <div>
-                <h5>Garantia 1</h5>
-                <p>Toda la garantia del mundo</p>
+                <h5>Portes Gratis</h5>
+                <p>En compras superiores a 150€</p>
               </div>
             </div>
             <div class="garantia">
               <i class="bi bi-bag-heart h2 m-color"></i>
               <div>
-                <h5>Garantia 1</h5>
-                <p>Toda la garantia del mundo</p>
-              </div>
-            </div>
-            <div class="garantia">
-              <i class="bi bi-bag-heart h2 m-color"></i>
-              <div>
-                <h5>Garantia 1</h5>
+                <h5>WEB SEGURA HTTPS</h5>
                 <p>Toda la garantia del mundo</p>
               </div>
             </div>
@@ -290,34 +288,32 @@
           </section>
 
         </main>
-
+  <!-- FOOTER -->
         <footer>
           <div class="wrap">
             <div class="izq">
-              <h4 class="logo">Releevant Shop</h4>
+              <img src="../img/Lienzo-removebg-preview.png" alt="Logo Lienzo en Blanco" width="150">
               <div class="politicas">
                 <nav>
                   <ul>
-                    <li><a href="">Politicas</a></li>
-                    <li><a href="">Politicas</a></li>
-                    <li><a href="">Politicas</a></li>
-                    <li><a href="">Politicas</a></li>
-                    <li><a href="">Politicas</a></li>
+                    <li><a href="#">Sobre Lienzo en Blanco</a></li>
+                    <li><a href="#">Nuestros expertos</a></li>
+                    <li><a href="#">Trabaja con nosotros</a></li>
+                    <li><a href="#">Páginas de ayuda</a></li>
                   </ul>
                 </nav>
                 <nav>
                   <ul>
-                    <li><a href="">Politicas</a></li>
-                    <li><a href="">Politicas</a></li>
-                    <li><a href="">Politicas</a></li>
-                    <li><a href="">Politicas</a></li>
-                    <li><a href="">Politicas</a></li>
+                    <li><a href="#">Politica de privacidad</a></li>
+                    <li><a href="#">Protección del comprador</a></li>
+                    <li><a href="#">Aviso legal</a></li>
+                    <li><a href="#">Condicions generales</a></li>
                   </ul>
                 </nav>
               </div>
             </div>
             <div class="der">
-              <h4>Únete a nuestra newsletter, bro</h4>
+              <h5>Únete a nuestra newsletter, te enviaremos email bonitos  = )</h5>
 
               <form action="">
 
@@ -330,7 +326,7 @@
                 <div class="input-grp">
                   <label for="">
                     <input type="checkbox">
-                    <span>Acepto la <a href="#">politica</a> de su majesta el rey</span>
+                    <span>Acepto vuestra <a href="#">politica</a> de privacidad </span>
                   </label>
                   <div class="error">Por favor, rellena tu apellido</div>
                 </div>
